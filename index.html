@@ -120,6 +120,74 @@
             </div>
         </section>
 
+        <section id="calculator" class="py-20 bg-gray-100">
+            <div class="container mx-auto px-6 text-center">
+                <h2 class="text-3xl md:text-4xl font-bold mb-4">Find Your Path to Ecuador 🇪🇨</h2>
+                <p class="text-gray-600 mb-8 max-w-2xl mx-auto">Answer a few quick questions to see which visa you may be eligible for.</p>
+
+                <div id="calculator-container" class="max-w-xl mx-auto bg-white p-8 rounded-lg shadow-lg">
+
+                    <div id="step-1" class="step-content" data-step="1">
+                        <p class="text-xl font-semibold mb-4">1 of 4: What is your country of citizenship?</p>
+                        <select id="country-select" class="w-full px-4 py-3 border border-gray-300 rounded-md focus:ring-2 focus:ring-blue-500 focus:outline-none text-gray-700">
+                            <option value="" disabled selected>Select a country</option>
+                            <option value="us">United States</option>
+                            <option value="ca">Canada</option>
+                            <option value="gb">United Kingdom</option>
+                            <option value="au">Australia</option>
+                            <option value="other">Other</option>
+                        </select>
+                        <button class="action-button next-button mt-6 w-full bg-blue-600 hover:bg-blue-700 text-white font-bold py-3 px-8 rounded-full transition duration-300" data-action="next">Next</button>
+                    </div>
+
+                    <div id="step-2" class="step-content hidden" data-step="2">
+                        <p class="text-xl font-semibold mb-4">2 of 4: Do you have a pension or a stable, verifiable monthly income from a foreign source?</p>
+                        <div class="space-y-4">
+                            <button class="action-button answer-button w-full px-4 py-3 border border-gray-300 rounded-md transition duration-200 hover:bg-gray-100" data-action="next" data-answer="income-yes">Yes</button>
+                            <button class="action-button answer-button w-full px-4 py-3 border border-gray-300 rounded-md transition duration-200 hover:bg-gray-100" data-action="next" data-answer="income-no">No</button>
+                        </div>
+                        <button class="action-button back-button mt-6 w-full bg-gray-400 hover:bg-gray-500 text-white font-bold py-3 px-8 rounded-full transition duration-300" data-action="back">Back</button>
+                    </div>
+
+                    <div id="step-3" class="step-content hidden" data-step="3">
+                        <p class="text-xl font-semibold mb-4">3 of 4: Do you have a professional degree (e.g., Bachelor's, Master's)?</p>
+                        <div class="space-y-4">
+                            <button class="action-button answer-button w-full px-4 py-3 border border-gray-300 rounded-md transition duration-200 hover:bg-gray-100" data-action="next" data-answer="degree-yes">Yes</button>
+                            <button class="action-button answer-button w-full px-4 py-3 border border-gray-300 rounded-md transition duration-200 hover:bg-gray-100" data-action="next" data-answer="degree-no">No</button>
+                        </div>
+                        <button class="action-button back-button mt-6 w-full bg-gray-400 hover:bg-gray-500 text-white font-bold py-3 px-8 rounded-full transition duration-300" data-action="back">Back</button>
+                    </div>
+
+                    <div id="step-4" class="step-content hidden" data-step="4">
+                        <p class="text-xl font-semibold mb-4">4 of 4: Are you interested in investing in Ecuador (e.g., property, bank CD)?</p>
+                        <div class="space-y-4">
+                            <button class="action-button answer-button w-full px-4 py-3 border border-gray-300 rounded-md transition duration-200 hover:bg-gray-100" data-action="next" data-answer="investment-yes">Yes</button>
+                            <button class="action-button answer-button w-full px-4 py-3 border border-gray-300 rounded-md transition duration-200 hover:bg-gray-100" data-action="next" data-answer="investment-no">No</button>
+                        </div>
+                        <button class="action-button back-button mt-6 w-full bg-gray-400 hover:bg-gray-500 text-white font-bold py-3 px-8 rounded-full transition duration-300" data-action="back">Back</button>
+                    </div>
+
+                    <div id="results" class="step-content hidden" data-step="5">
+                        <h3 id="result-text" class="text-3xl font-bold mb-4 text-blue-700"></h3>
+                        <p id="result-description" class="text-gray-600 mb-6"></p>
+
+                        <div class="bg-blue-50 p-6 rounded-lg shadow-inner">
+                            <h4 class="text-xl font-bold mb-2">Want to know for sure?</h4>
+                            <p class="text-gray-700 mb-4">Get a Free Detailed Visa Checklist sent directly to your inbox!</p>
+                            <form id="visa-lead-form">
+                                <input type="hidden" name="access_key" value="8c93c84e-bab1-46bf-8500-06e7fd5c053c">
+                                <input type="hidden" name="subject" value="New Visa Calculator Lead">
+                                <input type="text" name="email" placeholder="Your Email Address" class="w-full px-4 py-2 border border-gray-300 rounded-md mb-3 focus:ring-2 focus:ring-blue-500 focus:outline-none" required>
+                                <input type="text" name="phone" placeholder="Your WhatsApp" class="w-full px-4 py-2 border border-gray-300 rounded-md mb-4 focus:ring-2 focus:ring-blue-500 focus:outline-none">
+                                <button type="submit" class="w-full bg-yellow-500 hover:bg-yellow-600 text-white font-bold py-3 px-8 rounded-full transition duration-300">Get Your Free Checklist</button>
+                            </form>
+                        </div>
+
+                        <button class="action-button start-over-button mt-6 text-gray-600 hover:text-blue-700 font-semibold" data-action="start-over">Start Over</button>
+                    </div>
+                </div>
+            </div>
+        </section>
         <section id="value-prop" class="py-20">
             <div class="container mx-auto px-6 text-center">
                 <h2 class="text-3xl font-bold mb-12">The Cuenca Visas Difference: Why You Can Trust Us</h2>
@@ -172,6 +240,7 @@
                     </div>
                 </div>
             </div>
+        </div>
         </section>
 
         <section id="social-proof" class="py-20 bg-gray-100">
@@ -229,42 +298,7 @@
                         WhatsApp: +593-96-284-8410
                     </a>
                 </div>
-<!-- 
-                <div class="my-8 flex items-center justify-center">
-                    <span class="h-px w-20 bg-gray-400"></span>
-                    <span class="mx-4 text-gray-500 font-semibold">OR</span>
-                    <span class="h-px w-20 bg-gray-400"></span>
-                </div>
-
-                <h3 class="text-2xl font-bold mb-2">Send Us a Message</h3>
-                <p class="text-gray-600 mb-6">Fill out the form below and we'll get back to you within 24 hours.</p>
-
-                <form action="https://api.web3forms.com/submit" method="POST" id="contact-form" class="max-w-xl mx-auto text-left bg-white p-8 rounded-lg shadow-md">
-                    <input type="hidden" name="access_key" value="8c93c84e-bab1-46bf-8500-06e7fd5c053c">
-                    <input type="hidden" name="subject" value="New Contact Form Submission from Cuenca Visas">
-                    <input type="checkbox" name="botcheck" id="" style="display: none;">
-                    <div class="mb-4">
-                        <label for="name" class="block text-gray-700 font-medium mb-2">Your Name</label>
-                        <input type="text" id="name" name="FNAME" class="w-full px-4 py-2 border border-gray-300 rounded-md focus:ring-2 focus:ring-blue-500 focus:outline-none" required>
-                    </div>
-                    <div class="mb-4">
-                        <label for="email" class="block text-gray-700 font-medium mb-2">Your Email</label>
-                        <input type="text" id="email" name="email" class="w-full px-4 py-2 border border-gray-300 rounded-md focus:ring-2 focus:ring-blue-500 focus:outline-none" required>
-                    </div>
-                    <div class="mb-4">
-                        <label for="phone" class="block text-gray-700 font-medium mb-2">Your WhatsApp</label>
-                        <input type="text" id="phone" name="SMS" class="w-full px-4 py-2 border border-gray-300 rounded-md focus:ring-2 focus:ring-blue-500 focus:outline-none" placeholder="+593...">
-                    </div>
-                    <div class="mb-4">
-                        <label for="message" class="block text-gray-700 font-medium mb-2">Your Message</label>
-                        <textarea id="message" name="message" placeholder="Tell us a little about your visa needs..." rows="5" class="w-full px-4 py-2 border border-gray-300 rounded-md focus:ring-2 focus:ring-blue-500 focus:outline-none" required></textarea>
-                    </div>
-                    <div class="text-center">
-                        <button type="submit" class="bg-blue-600 hover:bg-blue-700 text-white font-bold py-3 px-8 rounded-full transition duration-300">Send Message</button>
-                    </div>
-                </form>
-            -->
-                 <div class="mt-12 text-gray-600">
+<div class="mt-12 text-gray-600">
                     <p class="font-semibold">Office Hours:</p>
                     <p>Monday - Friday: 8:00 AM - 5:00 PM</p>
                     <p>Saturday: 9:00 AM - 1:00 PM</p>
@@ -289,27 +323,7 @@
             </div>
         </div>
     </footer>
-<!-- 
-    <div id="email-popup" class="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center p-4 z-[100] hidden opacity-0 -translate-y-4">
-        <div class="bg-white rounded-lg shadow-2xl p-8 max-w-md w-full relative transform">
-            <button id="close-popup" class="absolute top-4 right-4 text-gray-500 hover:text-gray-800">
-                <i data-lucide="x" class="w-6 h-6"></i>
-            </button>
-            <h2 class="text-2xl font-bold mb-2">FREE Guide: The Expat's Visa Checklist</h2>
-            <p class="text-gray-600 mb-4">Enter your email to get my free guide: "5 Questions to Ask Before Hiring a Visa Facilitator." Avoid common mistakes and save yourself a headache!</p>
-            <form action="https://api.web3forms.com/submit" method="POST" id="popup-form">
-                <input type="hidden" name="access_key" value="8c93c84e-bab1-46bf-8500-06e7fd5c053c">
-                <input type="hidden" name="subject" value="New Lead: Free Visa Checklist Guide Download">
-                <input type="checkbox" name="botcheck" id="" style="display: none;">
-                <input type="text" name="email" placeholder="Enter your email address" class="w-full px-4 py-2 border border-gray-300 rounded-md mb-4 focus:ring-2 focus:ring-blue-500 focus:outline-none" required>
-                <input type="hidden" name="formType" value="popup">
-                <button type="submit" class="w-full bg-blue-600 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-md transition duration-300">Yes, Send Me The Guide Now!</button>
-            </form>
-        </div>
-    </div>
--->
-
-    <script>
+<script>
         // --- Mobile Menu Toggle ---
         const mobileMenuButton = document.getElementById('mobile-menu-button');
         const mobileMenu = document.getElementById('mobile-menu');
@@ -354,8 +368,344 @@
             }
         });
         
+        // --- Visa Eligibility Calculator Logic ---
+        const calculatorContainer = document.getElementById('calculator-container');
+        const steps = document.querySelectorAll('.step-content');
+        const countrySelect = document.getElementById('country-select');
+
+        let state = {
+            currentStep: 1,
+            answers: {
+                citizenship: '',
+                income: null,
+                degree: null,
+                investment: null
+            }
+        };
+
+        function updateUI() {
+            steps.forEach(step => {
+                const stepNumber = parseInt(step.dataset.step);
+                if (stepNumber === state.currentStep) {
+                    step.classList.remove('hidden');
+                } else {
+                    step.classList.add('hidden');
+                }
+            });
+        }
+
+        function determineResult() {
+            const resultText = document.getElementById('result-text');
+            const resultDesc = document.getElementById('result-description');
+
+            let result = "Based on your answers, you may be eligible for a ";
+
+            if (state.answers.income) {
+                result += "Pensioner Visa!";
+                resultDesc.textContent = "This visa is for individuals who have a guaranteed, stable monthly income from a foreign source (like a pension or social security).";
+            } else if (state.answers.degree) {
+                result += "Professional Visa!";
+                resultDesc.textContent = "If you have a professional degree, this visa could be your path to residency, allowing you to live and work in Ecuador.";
+            } else if (state.answers.investment) {
+                result += "Investor Visa!";
+                resultDesc.textContent = "Investing in Ecuador (e.g., in real estate or a Certificate of Deposit) is a great way to secure your residency.";
+            } else {
+                result = "Based on your answers, your eligibility is not immediately clear. Please contact us for a free consultation.";
+                resultDesc.textContent = "Don't worry! There are other visa options available. We can review your specific situation and guide you to the right solution.";
+            }
+
+            resultText.textContent = result;
+        }
+
+        calculatorContainer.addEventListener('click', (event) => {
+            const target = event.target;
+            const action = target.dataset.action;
+
+            if (!action) return; // Exit if the clicked element has no data-action attribute
+
+            switch (action) {
+                case 'next':
+                    if (state.currentStep === 1) {
+                        const country = countrySelect.value;
+                        if (country) {
+                            state.answers.citizenship = country;
+                            state.currentStep = 2;
+                        } else {
+                            // Optionally, provide user feedback if no country is selected
+                            alert('Please select your country of citizenship.');
+                        }
+                    } else if (state.currentStep === 2) {
+                        const answer = target.dataset.answer;
+                        state.answers.income = (answer === 'income-yes');
+                        state.currentStep = 3;
+                    } else if (state.currentStep === 3) {
+                        const answer = target.dataset.answer;
+                        state.answers.degree = (answer === 'degree-yes');
+                        state.currentStep = 4;
+                    } else if (state.currentStep === 4) {
+                        const answer = target.dataset.answer;
+                        state.answers.investment = (answer === 'investment-yes');
+                        state.currentStep = 5;
+                        determineResult();
+                    }
+                    break;
+                case 'back':
+                    state.currentStep--;
+                    break;
+                case 'start-over':
+                    state = {
+                        currentStep: 1,
+                        answers: {
+                            citizenship: '',
+                            income: null,
+                            degree: null,
+                            investment: null
+                        }
+                    };
+                    countrySelect.value = ''; // Reset the select dropdown
+                    break;
+            }
+
+            updateUI();
+        });
+
+        // Initialize UI on page load
+        updateUI();
+
+        // Handle form submission via Web3Forms
+        const visaLeadForm = document.getElementById('visa-lead-form');
+        visaLeadForm.addEventListener('submit', function(e) {
+            e.preventDefault();
+            
+            // Web3Forms Access Key
+            const accessKey = "8c93c84e-bab1-46bf-8500-06e7fd5c053c";
+            
+            const formData = new FormData(this);
+            const data = Object.fromEntries(formData.entries());
+            data['calculator_results'] = JSON.stringify(state.answers);
+
+            fetch("https://api.web3forms.com/submit", {
+                method: "POST",
+                headers: {
+                    "Content-Type": "application/json",
+                    "Accept": "application/json"
+                },
+                body: JSON.stringify(data)
+            })
+            .then(response => response.json())
+            .then(data => {
+                if (data.success) {
+                    alert("Thank you! Your free checklist is on its way. We'll be in touch soon!");
+                    visaLeadForm.reset();
+                } else {
+                    alert("Something went wrong. Please try again or contact us directly.");
+                }
+            })
+            .catch(error => {
+                console.error('Error submitting form:', error);
+                alert("Something went wrong. Please try again or contact us directly.");
+            });
+        });
+        
         // --- Initialize Lucide Icons ---
         lucide.createIcons();
     </script>
+    <script>
+    document.addEventListener('DOMContentLoaded', () => {
+        // --- Mobile Menu Toggle ---
+        const mobileMenuButton = document.getElementById('mobile-menu-button');
+        const mobileMenu = document.getElementById('mobile-menu');
+
+        mobileMenuButton.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+
+        // --- Email Capture Pop-up Logic ---
+        const emailPopup = document.getElementById('email-popup');
+        const closePopupButton = document.getElementById('close-popup');
+
+        // Function to show the popup
+        const showPopup = () => {
+            if (sessionStorage.getItem('popupClosed') !== 'true') {
+                emailPopup.classList.remove('hidden');
+                setTimeout(() => {
+                    emailPopup.classList.remove('opacity-0', '-translate-y-4');
+                }, 10); // small delay to allow transition
+            }
+        };
+
+        // Function to close the popup
+        const closePopup = () => {
+            sessionStorage.setItem('popupClosed', 'true');
+            emailPopup.classList.add('opacity-0', '-translate-y-4');
+            setTimeout(() => {
+                emailPopup.classList.add('hidden');
+            }, 300); // match transition duration
+        };
+
+        // Show popup after 7 seconds
+        setTimeout(showPopup, 7000);
+
+        // Event listeners
+        if (closePopupButton) {
+            closePopupButton.addEventListener('click', closePopup);
+        }
+        
+        // Close when clicking outside the modal content
+        if (emailPopup) {
+            emailPopup.addEventListener('click', (e) => {
+                if (e.target === emailPopup) {
+                    closePopup();
+                }
+            });
+        }
+        
+        // --- Visa Eligibility Calculator Logic ---
+        const calculatorContainer = document.getElementById('calculator-container');
+        const steps = document.querySelectorAll('.step-content');
+        const countrySelect = document.getElementById('country-select');
+
+        let state = {
+            currentStep: 1,
+            answers: {
+                citizenship: '',
+                income: null,
+                degree: null,
+                investment: null
+            }
+        };
+
+        function updateUI() {
+            steps.forEach(step => {
+                const stepNumber = parseInt(step.dataset.step);
+                if (stepNumber === state.currentStep) {
+                    step.classList.remove('hidden');
+                } else {
+                    step.classList.add('hidden');
+                }
+            });
+        }
+
+        function determineResult() {
+            const resultText = document.getElementById('result-text');
+            const resultDesc = document.getElementById('result-description');
+
+            let result = "Based on your answers, you may be eligible for a ";
+
+            if (state.answers.income) {
+                result += "Pensioner Visa!";
+                resultDesc.textContent = "This visa is for individuals who have a guaranteed, stable monthly income from a foreign source (like a pension or social security).";
+            } else if (state.answers.degree) {
+                result += "Professional Visa!";
+                resultDesc.textContent = "If you have a professional degree, this visa could be your path to residency, allowing you to live and work in Ecuador.";
+            } else if (state.answers.investment) {
+                result += "Investor Visa!";
+                resultDesc.textContent = "Investing in Ecuador (e.g., in real estate or a Certificate of Deposit) is a great way to secure your residency.";
+            } else {
+                result = "Based on your answers, your eligibility is not immediately clear. Please contact us for a free consultation.";
+                resultDesc.textContent = "Don't worry! There are other visa options available. We can review your specific situation and guide you to the right solution.";
+            }
+
+            resultText.textContent = result;
+        }
+        
+        if (calculatorContainer) {
+            calculatorContainer.addEventListener('click', (event) => {
+                const target = event.target;
+                const action = target.dataset.action;
+
+                if (!action) return; // Exit if the clicked element has no data-action attribute
+
+                switch (action) {
+                    case 'next':
+                        if (state.currentStep === 1) {
+                            const country = countrySelect.value;
+                            if (country) {
+                                state.answers.citizenship = country;
+                                state.currentStep = 2;
+                            } else {
+                                // Provide user feedback if no country is selected
+                                alert('Please select your country of citizenship.');
+                            }
+                        } else if (state.currentStep === 2) {
+                            const answer = target.dataset.answer;
+                            state.answers.income = (answer === 'income-yes');
+                            state.currentStep = 3;
+                        } else if (state.currentStep === 3) {
+                            const answer = target.dataset.answer;
+                            state.answers.degree = (answer === 'degree-yes');
+                            state.currentStep = 4;
+                        } else if (state.currentStep === 4) {
+                            const answer = target.dataset.answer;
+                            state.answers.investment = (answer === 'investment-yes');
+                            state.currentStep = 5;
+                            determineResult();
+                        }
+                        break;
+                    case 'back':
+                        state.currentStep--;
+                        break;
+                    case 'start-over':
+                        state = {
+                            currentStep: 1,
+                            answers: {
+                                citizenship: '',
+                                income: null,
+                                degree: null,
+                                investment: null
+                            }
+                        };
+                        countrySelect.value = ''; // Reset the select dropdown
+                        break;
+                }
+
+                updateUI();
+            });
+        }
+
+        // Initialize UI on page load
+        updateUI();
+
+        // Handle form submission via Web3Forms
+        const visaLeadForm = document.getElementById('visa-lead-form');
+        if (visaLeadForm) {
+            visaLeadForm.addEventListener('submit', function(e) {
+                e.preventDefault();
+                
+                // Web3Forms Access Key
+                const accessKey = "8c93c84e-bab1-46bf-8500-06e7fd5c053c";
+                
+                const formData = new FormData(this);
+                const data = Object.fromEntries(formData.entries());
+                data['calculator_results'] = JSON.stringify(state.answers);
+
+                fetch("https://api.web3forms.com/submit", {
+                    method: "POST",
+                    headers: {
+                        "Content-Type": "application/json",
+                        "Accept": "application/json"
+                    },
+                    body: JSON.stringify(data)
+                })
+                .then(response => response.json())
+                .then(data => {
+                    if (data.success) {
+                        alert("Thank you! Your free checklist is on its way. We'll be in touch soon!");
+                        visaLeadForm.reset();
+                    } else {
+                        alert("Something went wrong. Please try again or contact us directly.");
+                    }
+                })
+                .catch(error => {
+                    console.error('Error submitting form:', error);
+                    alert("Something went wrong. Please try again or contact us directly.");
+                });
+            });
+        }
+        
+        // --- Initialize Lucide Icons ---
+        lucide.createIcons();
+    });
+</script>
 </body>
 </html>
